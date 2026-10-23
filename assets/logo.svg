@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="txt" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e0f2fe"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded-square tile -->
+  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
+
+  <!-- Inner highlight ring -->
+  <rect x="9" y="9" width="238" height="238" rx="50" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="4"/>
+
+  <!-- VG monogram -->
+  <text x="128" y="152" font-family="Poppins, Arial, sans-serif" font-size="104" font-weight="700" fill="url(#txt)" text-anchor="middle">VG</text>
+
+  <!-- Data sparkline -->
+  <polyline points="56,196 98,176 140,186 180,160 212,170"
+            fill="none" stroke="#0f172a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  <circle cx="56" cy="196" r="7" fill="#0f172a"/>
+  <circle cx="180" cy="160" r="6" fill="#0f172a"/>
+  <circle cx="212" cy="170" r="7" fill="#0f172a"/>
+</svg>
