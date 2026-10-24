@@ -11,7 +11,15 @@
 }
 
 /* ---------- Base ---------- */
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a, button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
 
 body {
   background: var(--bg);
@@ -376,3 +384,29 @@ footer .social-btn { width: 36px; height: 36px; }
   border: 2px solid var(--primary);
   box-shadow: 0 0 12px rgba(56, 189, 248, 0.7);
 }
+
+/* ---------- Small screens / phones ---------- */
+@media (max-width: 640px) {
+  section[id] { scroll-margin-top: 84px; }
+
+  .float-chip {
+    font-size: 0.74rem;
+    padding: 0.4rem 0.85rem;
+  }
+
+  .toast {
+    left: 0.75rem;
+    right: 0.75rem;
+    max-width: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .stat-num { font-size: 1.45rem; }
+
+  .btn-primary, .btn-ghost {
+    padding: 0.8rem 1.3rem;
+    font-size: 0.9rem;
+  }
+}
+
