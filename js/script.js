@@ -4,7 +4,7 @@
 
 /* ---------- 1. Typing effect ---------- */
 const typedEl = document.getElementById("typed");
-const roles = ["Data Analyst", "AI/ML Learner", "SQL Developer", "YouTube Creator"];
+const roles = ["Data Analyst", "AI/ML Learner", "SQL Developer", "Frontend Developer", "YouTube Creator"];
 let roleIdx = 0;
 let charIdx = 0;
 let deleting = false;
